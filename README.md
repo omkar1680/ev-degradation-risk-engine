@@ -20,12 +20,6 @@ The predictive model successfully captured the non-linear degradation of EV batt
 2. **The DC Fast Charging Penalty:** Vehicles relying heavily on DC Fast Chargers (>30kW) showed a steeply accelerated degradation curve compared to vehicles using AC Home Level 2 chargers, plunging into "Subprime" underwriting tiers up to 30% faster.
 3. **Behavioral Risk:** "Rash" drivers (characterized by high energy consumption and deep discharging down to 5% SoC) compound thermal stress on the battery, requiring higher insurance premiums or steeper loan collateral.
 
-## 📂 Repository Structure
-* `/data/` - Contains the `ev_telemetry_dataset_v2.csv` (Simulated payload).
-* `/notebooks/` - Contains `01_data_simulation_and_ml.ipynb` (Google Colab notebook with LightGBM training and feature importance visuals).
-* `/sql/` - Contains `01_ddl_lakehouse_setup.sql` and `02_risk_underwriting_queries.sql` (T-SQL logic for risk categorization).
-* `/dashboards/` - Contains `ev_risk_scatter.png` (High-res export of the Power BI executive dashboard).
-
 ## 🚀 How to Run Locally
 1. Clone the repository.
 2. Run the Jupyter Notebook to generate a fresh localized dataset. 
@@ -33,4 +27,4 @@ The predictive model successfully captured the non-linear degradation of EV batt
 4. Execute the queries in `/sql/` to generate the underwriting matrix.
 
 ---
-*Architected and developed by Omkar Yogesh Vaidya.*
+*Architected and developed by Omkar Vaidya.*
